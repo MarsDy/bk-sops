@@ -23,8 +23,8 @@ from blueapps.core.celery import celery_app
 
 # app 基本信息默认设置，本地开发可以修改这里，预发布环境和正式环境会从环境变量自动获取
 RUN_VER = 'open'
-APP_ID = ''
-APP_TOKEN = ''
+APP_ID = 'nd-sops'
+APP_TOKEN = '0fdeea1d-acef-4e9b-b443-1ed577f62f77'
 BK_PAAS_HOST = ''
 BK_URL = BK_PAAS_HOST
 
@@ -33,5 +33,4 @@ SECRET_KEY = APP_TOKEN = os.environ.get('APP_TOKEN', APP_TOKEN)
 RUN_VER = os.environ.get('RUN_VER', RUN_VER)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(
-    __file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

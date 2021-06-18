@@ -21,6 +21,24 @@ else:
 import env
 
 
+BROKER_URL = "redis://localhost:6379/0"
+
+# stag数据库设置
+# USE FOLLOWING SQL TO CREATE THE DATABASE NAMED APP_CODE
+# SQL: CREATE DATABASE `bk_sops` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": APP_CODE,
+        "USER": "root",
+        "PASSWORD": "oF7Df72P_NWs",
+        "HOST": "mysql-default.service.consul",
+        "PORT": "3306",
+        "TEST": {"NAME": "test_sops", "CHARSET": "utf8", "COLLATION": "utf8_general_ci"},
+    },
+}
+
+
 # 预发布环境
 RUN_MODE = "STAGING"
 
