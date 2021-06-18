@@ -42,7 +42,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": APP_CODE,
         "USER": "root",
-        "PASSWORD": "123456",
+        "PASSWORD": "oF7Df72P_NWs",
         "HOST": "mysql-default.service.consul",
         "PORT": "3306",
         "TEST": {"NAME": "test_sops", "CHARSET": "utf8", "COLLATION": "utf8_general_ci"},

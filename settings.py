@@ -17,6 +17,7 @@ specific language governing permissions and limitations under the License.
 
 import os
 
+
 # V3判断环境的环境变量为BKPAAS_ENVIRONMENT
 if 'BKPAAS_ENVIRONMENT' in os.environ:
     ENVIRONMENT = os.getenv('BKPAAS_ENVIRONMENT', 'dev')
@@ -39,3 +40,6 @@ except ImportError as e:
 for _setting in dir(_module):
     if _setting == _setting.upper():
         locals()[_setting] = getattr(_module, _setting)
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')

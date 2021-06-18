@@ -25,7 +25,7 @@ from blueapps.core.celery import celery_app
 RUN_VER = 'open'
 APP_ID = 'nd-sops'
 APP_TOKEN = '0fdeea1d-acef-4e9b-b443-1ed577f62f77'
-BK_PAAS_HOST = ''
+BK_PAAS_HOST = 'http://paas.nd.101nd.cn:80'
 BK_URL = BK_PAAS_HOST
 
 APP_CODE = APP_ID = os.environ.get('APP_ID', APP_ID)
